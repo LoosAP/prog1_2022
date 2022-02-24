@@ -57,6 +57,46 @@ int main(){
 
     win.set_label("Draw rectangle");
     win.wait_for_button();
+     
+    r.set_fill_color(Color::yellow);
+	poly.set_style(Line_style(Line_style::dash, 4));
+	poly_rect.set_style(Line_style(Line_style::dash, 2));
+	poly_rect.set_fill_color(Color::green);
+	win.set_label("Filling");
+	win.wait_for_button()   
+        
+    Text t {Point{150, 150}, "Boiler Eladó!"};
+	win.attach(t);
+	win.set_label("Text");
+	win.wait_for_button();
+        
+    t.set_font(Font::times_bold);
+	t.set_font_size(20);
+	win.set_label("Text_font");
+	win.wait_for_button();
+	
+	
+	Image ii {Point{100, 50}, "badge.jpg"};
+	win.attach(ii);
+	win.set_label("Image");
+	win.wait_for_button();
+	
+	ii.move(100, 200);
+	win.set_label("Image_2");
+	win.wait_for_button();
+	
+	
+	Circle c {Point{100, 200}, 50};
+	Ellipse e {Point{100, 200}, 75, 25};
+	e.set_color(Color::dark_red);
+	Mark m {Point{100, 200}, 'x'};
+	
+	win.attach(c);
+	win.attach(e);
+	win.attach(m);
+	win.set_label("Extras");
+	win.wait_for_button();
+    
     }
         catch(exception& e) { //általános exception
             cerr << "exception: "  << e.what()<< '\n';
