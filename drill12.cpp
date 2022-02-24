@@ -1,5 +1,5 @@
 #include "./GUI/Simple_window.h"
-#include "Prog1/week2_6/GUI/Graph.h"
+#include "./GUI/Graph.h"
 #include <string>
 #include <iostream>
 
