@@ -36,7 +36,15 @@ class D21 : public B2{
         void pvf() {cout << s << endl;}
         string s;
 };
-
+class D22 : public B2 {
+    public:
+	    int n;
+	    void pvf() {cout << n << endl;}
+};
+void f(B2& b2){
+	b2.pvf();
+}
+    
 int main (){
     /*B1 b1;
     b1.vf();
@@ -58,5 +66,11 @@ int main (){
     D21 d21;
     d21.s = "d21.s";
     d21.pvf();
-
+    
+    D22 d22;
+	d22.n = 1;
+	d22.pvf();
+	
+	f(d21);
+	f(d22);
 }
