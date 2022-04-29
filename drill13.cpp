@@ -1,12 +1,11 @@
-#include "Graph.h"
-#include "Simple_window.h"
-#include "Window.h"
+#include "GUI/Graph.h"
+#include "GUI/Simple_window.h"
+#include "GUI/Window.h"
 
 using namespace Graph_lib;
 
-/* g++ drill12.cpp GUI/Graph.cpp GUI/Window.cpp GUI/GUI.cpp GUI/Simple_window.cpp -o drill12 `fltk-config --ldflags --use-images`
+/*g++ drill13.cpp GUI/Graph.cpp GUI/Window.cpp GUI/GUI.cpp GUI/Simple_window.cpp -o drill13 `fltk-config --ldflags --use-images`
 */
-
 int main(){
 try{
 
@@ -40,7 +39,7 @@ try{
 	
 	Vector_ref<Image> v2;
 	for(int i = 0; i < 401; i += 200){
-		v2.push_back(new Image{Point{i+200, i}, "badge.jpg"});
+		v2.push_back(new Image{Point{i+200, i}, "GUI/badge.jpg"});
 		v2[v2.size()-1].set_mask(Point(100, 100), 200, 200);
 		win.attach(v2[v2.size()-1]);}
 	win.set_label("Images");
@@ -50,7 +49,7 @@ try{
 	while(true){
 		for(int i = 0; i < 701; i += 100){
 			for(int j = 0; j < 701; j += 100){
-				Image ii{Point{j, i}, "badge.jpg"};
+				Image ii{Point{j, i}, "GUI/badge.jpg"};
 				ii.set_mask(Point(150, 150), 100, 100);
 				win.attach(ii);
 				win.set_label("Moving image");

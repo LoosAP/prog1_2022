@@ -78,7 +78,7 @@ int main(){
 	win.wait_for_button();
 	
 	
-	Image ii {Point{100, 50}, "badge.jpg"};
+	Image ii {Point{100, 50}, "GUI/badge.jpg"};
 	win.attach(ii);
 	win.set_label("Image");
 	win.wait_for_button();
