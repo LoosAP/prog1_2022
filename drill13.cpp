@@ -25,8 +25,7 @@ try{
 	win.attach(grid);
 	win.set_label("Lines");
 	win.wait_for_button();
-	
-	//Vector_ref mert a Graph.h-ban ez szerepel (vectorral nem fut le, hibát dob)
+
 	Vector_ref<Rectangle> v;
 	for(int i = 0; i <= 800; i += 100){
 		v.push_back(new Rectangle{Point(i, i), 100, 100});

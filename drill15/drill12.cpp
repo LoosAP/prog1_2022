@@ -1,5 +1,5 @@
-#include "./GUI/Simple_window.h"
-#include "./GUI/Graph.h"
+#include "Simple_window.h"
+#include "Graph.h"
 #include <string>
 #include <iostream>
 
@@ -22,7 +22,7 @@ int main(){
     win.set_label("Axis");
     win.wait_for_button();
 
-    Axis ya {Axis::y, Point {20,300}, 280, 10, "y axis"};
+    Axis ya {Axis::y, Point {20,200}, 280, 10, "y axis"};
     ya.set_color(Color::cyan);
 
     win.attach(ya);
@@ -47,13 +47,14 @@ int main(){
     
     Rectangle r {Point{200,200}, 100, 50};
     win.attach(r);
+    win.wait_for_button();
 
     Closed_polyline poly_rect;
 
     poly_rect.add(Point{100,50});
     poly_rect.add(Point{200,50});
     poly_rect.add(Point{200,100});
-    poly_rect.add(Point{100,100});
+    poly_rect.add(Point{50,50});
 
     win.attach(poly_rect);
 
@@ -78,7 +79,7 @@ int main(){
 	win.wait_for_button();
 	
 	
-	Image ii {Point{100, 50}, "GUI/badge.jpg"};
+	Image ii {Point{100, 50}, "badge.jpg"};
 	win.attach(ii);
 	win.set_label("Image");
 	win.wait_for_button();
