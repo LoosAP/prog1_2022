@@ -48,10 +48,12 @@ int main(){
     Rectangle r {Point{200,200}, 100, 50};
     win.attach(r);
 
+    Closed_polyline poly_rect;
+
     poly_rect.add(Point{100,50});
     poly_rect.add(Point{200,50});
     poly_rect.add(Point{200,100});
-    poly_rect.add(Point{50,75});
+    poly_rect.add(Point{100,100});
 
     win.attach(poly_rect);
 
@@ -63,9 +65,9 @@ int main(){
 	poly_rect.set_style(Line_style(Line_style::dash, 2));
 	poly_rect.set_fill_color(Color::green);
 	win.set_label("Filling");
-	win.wait_for_button()   
+	win.wait_for_button();   
         
-    Text t {Point{150, 150}, "Boiler Eladó!"};
+    Text t {Point{150, 150}, "Boiler Elado!"};
 	win.attach(t);
 	win.set_label("Text");
 	win.wait_for_button();

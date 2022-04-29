@@ -54,7 +54,7 @@ int main(){
     poly_rect.add(Point{100,50});
     poly_rect.add(Point{200,50});
     poly_rect.add(Point{200,100});
-    poly_rect.add(Point{100,100});
+    poly_rect.add(Point{50,50});
 
     win.attach(poly_rect);
 
