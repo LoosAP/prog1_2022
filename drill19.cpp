@@ -55,7 +55,7 @@ istream& operator>>(istream& is, vector<T>& v){
 		is >> ch;
 		if(ch != ',') break;
 	}
-	return is;
+	return is; 
 }
 
 int main(){
