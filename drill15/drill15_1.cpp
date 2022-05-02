@@ -31,7 +31,7 @@ try{
 	Function f {one, -10, 11, Point{300, 300}, 400, 20, 20};
 	
 	win.attach(f);
-	win.set_label("Function graphs");
+	win.set_label("Function graphs");  
 	win.wait_for_button();
 	
 	Function f2 {slope, -10, 11, Point{300, 300}, 400, 20, 20};

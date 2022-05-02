@@ -53,7 +53,7 @@ int main(){
 	/*p.name = "Goofy";
 	p.age = 63;*/
 	
-	p = Person("Goofy", "Goober", 63);
+	p = Person("Loos", "Andras", 21);
 	
 	cout << p.first() << ' ' << p.last() << ' ' << p.age() << endl;
 	

@@ -15,7 +15,7 @@ class D1 : public B1{
         virtual void vf() {cout << "D1::vf()\n";}
         void f() {cout << "D1::f()\n";}
         virtual void pvf() = 0;
-};
+}; 
 
 class D2 : public D1{
     public:
@@ -73,4 +73,5 @@ int main (){
 	
 	f(d21);
 	f(d22);
+
 }

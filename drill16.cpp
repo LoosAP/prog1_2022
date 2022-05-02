@@ -1,7 +1,7 @@
-#include "Graph.h"
-#include "GUI.h"
-#include "Simple_window.h"
-#include "Window.h"
+#include "GUI/Graph.h"
+#include "GUI/GUI.h"
+#include "GUI/Simple_window.h"
+#include "GUI/Window.h"
 
 using namespace Graph_lib;
 
